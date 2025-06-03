@@ -1,0 +1,17 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.f"
+    xmlns:c="sap.ui.core">
+    <HBox>
+        <VBox justifyContent="Start" class="sapUiSmallMarginBottom">
+            <Label
+		    text="{i18n>labelInputText}"
+		    labelFor="input-product-name"
+		    design="Bold" />
+	        <Input id="input-product-name" />
+        </VBox>
+        <Button text="{i18n>addProductText}" icon="sap-icon://add" class="sapUiSmallMarginTop sapUiTinyMarginBegin" press=".onAddProduct" />
+    </HBox>
+</core:FragmentDefinition>

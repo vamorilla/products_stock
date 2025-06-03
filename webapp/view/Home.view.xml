@@ -1,6 +1,14 @@
-<mvc:View controllerName="productsstock.practiceproject.controller.Home"
+<mvc:View 
+    controllerName="productsstock.practiceproject.controller.Home"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+    <Page id="page" title="{i18n>title}" class="sapUiResponsiveContentPadding">
+        <VBox class="sapUiSmallMarginEnd">
+            <c:Fragment
+                fragmentName="productsstock.practiceproject.view.fragments.ProductSearcher"
+                type="XML"
+            />
+        </VBox>
     </Page>
 </mvc:View>
